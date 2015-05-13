@@ -21,29 +21,23 @@ angular.module(ApplicationConfiguration.applicationModuleName).run(['Menus',
 			}
 		});
 
-		// Menus.addMenuItem('topbar', {
-		// 	title: 'How It Works',
-		// 	state: 'home',
-		// 	params: {
-		// 		section: 'howitworks'
-		// 	}
-		// });
+		Menus.addMenuItem('topbar', {
+			title: 'Samples',
+			state: 'home',
+			activeState: 'samples',
+			params: {
+				section: 'samples'
+			}
+		});
 
-		// Menus.addMenuItem('topbar', {
-		// 	title: 'Samples',
-		// 	state: 'home',
-		// 	params: {
-		// 		section: 'samples'
-		// 	}
-		// });
-
-		// Menus.addMenuItem('topbar', {
-		// 	title: 'Contact',
-		// 	state: 'home',
-		// 	params: {
-		// 		section: 'contact'
-		// 	}
-		// });
+		Menus.addMenuItem('topbar', {
+			title: 'Contact',
+			state: 'home',
+			activeState: 'contact',
+			params: {
+				section: 'contact'
+			}
+		});
 
 		Menus.addMenuItem('topbar', {
 			title: 'Gallery',
