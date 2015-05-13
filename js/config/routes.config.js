@@ -14,10 +14,10 @@ angular.module(ApplicationConfiguration.applicationModuleName).config(['$statePr
 		}).
 		state('home', {
 			url: '/:section',
-			templateUrl: 'views/home.view.html'
-		}).
-		state('home.about', {
-			url: '/about'
+			templateUrl: 'views/home.view.html',
+			options: {
+				inherit: false
+			}
 		});
 	}
 ]);

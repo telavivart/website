@@ -1,7 +1,7 @@
 'use strict';
 
-angular.module(ApplicationConfiguration.applicationModuleName).controller('HeaderController', ['$scope', '$state', '$location', '$uiViewScroll', '$stateParams', 'Menus',
-    function($scope, $state, $location, $uiViewScroll, $stateParams, Menus) {
+angular.module(ApplicationConfiguration.applicationModuleName).controller('HeaderController', ['$scope', '$state', '$stateParams', 'Menus',
+    function($scope, $state, $stateParams, Menus) {
         // Expose view variables
         $scope.$state = $state;
 
@@ -14,15 +14,9 @@ angular.module(ApplicationConfiguration.applicationModuleName).controller('Heade
             $scope.isCollapsed = !$scope.isCollapsed;
         };
 
-        $scope.scrollTo = function(id) {
-            $uiViewScroll(angular.element(id));
-        }
-
         // Collapsing the menu after navigation
         $scope.$on('$stateChangeSuccess', function() {
             $scope.isCollapsed = false;
-            $location.hash();
-            $uiViewScroll($stateParams.section);
         });
     }
 ]);

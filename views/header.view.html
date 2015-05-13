@@ -6,12 +6,11 @@
 			<span class="icon-bar"></span>
 			<span class="icon-bar"></span>
 		</button>
-		<a data-ui-sref="home" class="navbar-brand">TEL-AVIV ART</a>
+		<a data-ui-sref="home({section: ''})" class="navbar-brand">TEL-AVIV ART</a>
 	</div>
 	<nav class="collapse navbar-collapse" collapse="!isCollapsed" role="navigation">
 		<ul class="nav navbar-nav navbar-right"
 			data-ng-if="menu.shouldRender();">
-			<li><a href="#services" du-smooth-scroll">Services</a></li>
 			<li data-ng-repeat="item in menu.items | orderBy: 'position'" 
 				data-ng-if="item.shouldRender();" 
 				ng-switch="item.type" 

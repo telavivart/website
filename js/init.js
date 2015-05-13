@@ -7,7 +7,7 @@ angular.module(ApplicationConfiguration.applicationModuleName, ApplicationConfig
 angular.module(ApplicationConfiguration.applicationModuleName).config(['$locationProvider', '$uiViewScrollProvider',
     function($locationProvider, $uiViewScrollProvider) {
         $locationProvider.hashPrefix('!');
-        $uiViewScrollProvider.useAnchorScroll();
+        // $uiViewScrollProvider.useAnchorScroll();
     }
 ]);
 

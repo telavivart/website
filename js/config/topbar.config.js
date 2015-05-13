@@ -6,13 +6,19 @@ angular.module(ApplicationConfiguration.applicationModuleName).run(['Menus',
 		// Set top bar menu items
 		Menus.addMenuItem('topbar', {
 			title: 'About',
-			state: 'home.about',
-			activeState: 'about'
+			state: 'home',
+			activeState: 'about',
+			params: {
+				section: 'about'
+			}
 		});
 		Menus.addMenuItem('topbar', {
 			title: 'Services',
-			state: 'home.services',
-			activeState: 'services'
+			state: 'home',
+			activeState: 'services',
+			params: {
+				section: 'services'
+			}
 		});
 
 		// Menus.addMenuItem('topbar', {
