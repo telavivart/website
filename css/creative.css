@@ -293,6 +293,8 @@ header .header-content .header-content-inner p {
 
 .service-box h3 {
 	text-transform: uppercase;
+	font-weight: bold;
+	color: #444;
 }
 
 .portfolio-box {
