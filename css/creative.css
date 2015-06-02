@@ -158,39 +158,51 @@ aside {
     .navbar-default .nav > li.important-link > a:focus:hover {
         color: #fdd35a;
     }
-
+	
+	.navbar-default.navbar-opaque,
     .navbar-default.ui-scrollfix {
         border-color: rgba(34,34,34,.05);
         background-color: #fff;
     }
-
+	
+	.navbar-default.navbar-opaque .navbar-header .navbar-brand,
     .navbar-default.ui-scrollfix .navbar-header .navbar-brand {
         border-color: rgba(255,255,255,.3);
         font-size: 1.8em;
         color: #f05f40;
     }
-
+	
+	.navbar-default.navbar-opaque .navbar-header .navbar-brand:hover,
+    .navbar-default.navbar-opaque .navbar-header .navbar-brand:focus,
     .navbar-default.ui-scrollfix .navbar-header .navbar-brand:hover,
     .navbar-default.ui-scrollfix .navbar-header .navbar-brand:focus {
         color: #eb3812;
     }
 
+    .navbar-default.navbar-opaque .nav > li > a,
     .navbar-default.ui-scrollfix .nav > li > a,
+    .navbar-default.navbar-opaque .nav > li > a:focus,
     .navbar-default.ui-scrollfix .nav > li > a:focus {
         color: #222;
     }
 
+    .navbar-default.navbar-opaque .nav > li > a:hover,
     .navbar-default.ui-scrollfix .nav > li > a:hover,
+    .navbar-default.navbar-opaque .nav > li > a:focus:hover,
     .navbar-default.ui-scrollfix .nav > li > a:focus:hover {
         color: #f05f40;
     }
 
+    .navbar-default.navbar-opaque .nav > li.important-link > a,
     .navbar-default.ui-scrollfix .nav > li.important-link > a,
+    .navbar-default.navbar-opaque .nav > li.important-link > a:focus,
     .navbar-default.ui-scrollfix .nav > li.important-link > a:focus {
         color: #ffce55;
     }
 
+    .navbar-default.navbar-opaque .nav > li.important-link > a:hover,
     .navbar-default.ui-scrollfix .nav > li.important-link > a:hover,
+    .navbar-default.navbar-opaque .nav > li.important-link > a:focus:hover,
     .navbar-default.ui-scrollfix .nav > li.important-link > a:focus:hover {
         color: #fdd35a;
     }

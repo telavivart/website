@@ -15,8 +15,14 @@ angular.module(ApplicationConfiguration.applicationModuleName).controller('Heade
         };
 
         // Collapsing the menu after navigation
-        $scope.$on('$stateChangeSuccess', function() {
+        $scope.$on('$stateChangeSuccess', function(ev, toState, toParams, fromState, fromParams) {
             $scope.isCollapsed = false;
+
+            if(toState.name !== 'home') {
+            	$('#mainNav').addClass('navbar-opaque');
+            } else {
+            	$('#mainNav').removeClass('navbar-opaque');
+            }
         });
     }
 ]);

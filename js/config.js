@@ -4,7 +4,7 @@
 var ApplicationConfiguration = (function() {
 	// Init module configuration options
 	var applicationModuleName = 'telavivart';
-	var applicationModuleVendorDependencies = ['ngResource', 'ngAnimate', 'ui.router', 'ui.bootstrap', 'ui.utils', 'firebase', 'ngFitText', 'duScroll'];
+	var applicationModuleVendorDependencies = ['ngResource', 'ngAnimate', 'ui.router', 'ui.bootstrap', 'ui.utils', 'firebase', 'ngFitText', 'duScroll', 'ui.select'];
 
 	// Add a new vertical module
 	var registerModule = function(moduleName, dependencies) {

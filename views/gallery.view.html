@@ -1,1 +1,107 @@
-<h1>TEST</h1>
+<div class="container-fluid content" data-ng-controller="GalleryController">
+    <!-- 
+    <div class="row">
+        <form class="form-inline">
+            <div class="col-md-3">
+                <div class="form-group">
+                    <ui-select multiple data-ng-model="search.style" theme="select2" search-enabled="false">
+                        <ui-select-match placeholder="Select style">{{$item.title}}</ui-select-match>
+                        <ui-select-choices data-repeat="style in styles">
+                            <span>{{style.title | highlight: $select.search}}</span>
+                        </ui-select-choices>
+                    </ui-select>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="form-group">
+                    <ui-select multiple data-ng-model="search.size" theme="select2" search-enabled="false">
+                        <ui-select-match placeholder="Select size">{{$item.title}}</ui-select-match>
+                        <ui-select-choices data-repeat="size in sizes">
+                            <span>{{size.title | highlight: $select.search}}</span>
+                        </ui-select-choices>
+                    </ui-select>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="form-group">
+                    <ui-select multiple data-ng-model="search.technique" theme="select2" search-enabled="false">
+                        <ui-select-match placeholder="Select technique">{{$item.title}}</ui-select-match>
+                        <ui-select-choices data-repeat="technique in techniques">
+                            <span>{{technique.title | highlight: $select.search}}</span>
+                        </ui-select-choices>
+                    </ui-select>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="form-group">
+                    <ui-select multiple data-ng-model="search.price" theme="select2" search-enabled="false">
+                        <ui-select-match placeholder="Select price">{{$item.title}}</ui-select-match>
+                        <ui-select-choices data-repeat="price in prices">
+                            <span>{{price.title | highlight: $select.search}}</span>
+                        </ui-select-choices>
+                    </ui-select>
+                </div>
+            </div>
+        </form>
+    </div> -->
+    <div class="col-md-2 filters-container well">
+        <h4>Size</h4>
+        <ul class="list-unstyled">
+            <li data-ng-repeat="size in sizes">
+                <div class="checkbox">
+                    <label>
+                        <input ng-checked="true" type="checkbox"> {{size.title}}
+                    </label>
+                </div>
+            </li>
+        </ul>
+        <hr>
+        <h4>Price</h4>
+        <ul class="list-unstyled">
+            <li data-ng-repeat="price in prices">
+                <div class="checkbox">
+                    <label>
+                        <input ng-checked="true" type="checkbox"> {{price.title}}
+                    </label>
+                </div>
+            </li>
+        </ul>
+        <hr>
+        <h4>Style</h4>
+        <ul class="list-unstyled">
+            <li data-ng-repeat="style in styles">
+                <div class="checkbox">
+                    <label>
+                        <input ng-checked="true" type="checkbox"> {{style.title}}
+                    </label>
+                </div>
+            </li>
+        </ul>
+        <hr>
+        <h4>Technique</h4>
+        <ul class="list-unstyled">
+            <li data-ng-repeat="technique in techniques">
+                <div class="checkbox">
+                    <label>
+                        <input ng-checked="true" type="checkbox"> {{technique.title}}
+                    </label>
+                </div>
+            </li>
+        </ul>
+    </div>
+    <div class="col-md-10 works-container">
+        <ul class="works list-unstyled">
+            <li class="col-md-4 work-container" data-ng-repeat="work in works">
+                <div class="work-image-container">
+                    <div class="work-image" class="portfolio-box" style="background-image:url('{{work.images.original.url}}')"></div>
+                </div>
+                <div class="work-details-container">
+                    <strong class="strong" data-ng-bind="work.title"></strong>
+                    <br>
+                    <span class="small" data-ng-bind="work.artist.firstName + ' ' + work.artist.lastName"></span>
+                    <span class="pull-right small" data-ng-bind="work.price.base | currency"></span>
+                </div>
+            </li>
+        </ul>
+    </div>
+</div>
